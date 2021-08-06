@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Global Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../styles/home.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=2.0,width=device-width"
+    />
+    <style type="text/css">
+        h2{
+            margin: 0;
+            color: #666;
+            padding-top: 90px;
+            font-size: 52px;
+            font-family: "trebuchet ms", sans-serif;
+        }
+        .item{
+            background: #333;
+            text-align: center;
+            height: 300px !important;
+        }
+        .carousel{
+            margin-top: 20px;
+        }
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -27,7 +54,7 @@
             Career
         </li>
         </a>
-        <a href="#">
+        <a href="registration.html">
         <li>
             Investor Relationships
         </li>
@@ -63,6 +90,54 @@
 
 </header>
 <hr>
+<div class="bs-example">
+    <div id="myCarousel"  class="carousel slide" data-interval="3000"
+         data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"
+                class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <figure>
+                    <img src="../images/future-of-payments-640x400.jpg"/>
+                </figure>
+                <div class="carousel-caption">
+                    <h3>Future of payments</h3>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/Token+power640x400.jpg"/>
+                </figure>
+                <div class="carousel-caption">
+                    <h3>Token Power</h3>
+                    </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/Taiwans-green-energy-revolution-640x400.jpg"/>
+                </figure>
+                <div class="carousel-caption">
+                    <h3>Taiwans-green-energy-revolution</h3>
+                    </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span  class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+
 <section id="middle">
 
 <article>
@@ -71,7 +146,7 @@
     </figure>
     <header>
         <h6>flow article | July 22, 2021</h6>
-        <h1>Reimagining the future of payments</h1>
+        <h4>Reimagining the future of payments</h4>
     </header>
     <p>
         The pandemic has accelerated the pace of change over the past year and bank-led merchant solutions are among the responses to a huge shift in payment methods and the boost to e-commerce, reports Helen Sanders
@@ -84,7 +159,7 @@
     </figure>
     <header>
         <h6>flow article  | July 9, 2021</h6>
-        <h1>Taiwan’s green energy revolution</h1>
+        <h4>Taiwan’s green energy revolution</h4>
     </header>
     <p>
         By attracting international corporates and financing with a partnership approach to offshore wind farms, Taiwan is driving renewable energy growth. flow’s Clarissa Dann provides an overview of two large, syndicated export credit agency deals
@@ -96,7 +171,7 @@
     </figure>
     <header>
         <h6>flow article  | July 2, 2021</h6>
-        <h1>Inflation: where next?</h1>
+        <h4>Inflation: where next?</h4>
     </header>
     <p>
         As inflation moves upwards, central banks continue to assert that the increase is transitory. Yet a return to “uncomfortable levels” is a very real prospect as the US economy undergoes its biggest shift of direction in four decades and others follow its lead, reports flow’s Graham Buck
@@ -108,7 +183,7 @@
     </figure>
     <header>
         <h6>flow article  | June 25, 2021</h6>
-        <h1>Token power</h1>
+        <h4>Token power</h4>
     </header>
     <p>
         Despite its volatility, Bitcoin can no longer be ignored and one country has made it legal tender. Where does this leave corporate treasurers and investors – and the financial services industry? flow's Clarissa Dann reports on the prospect of a brave new tokenised world

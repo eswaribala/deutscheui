@@ -21,7 +21,9 @@ body{
 }
 
 
-header menu ul li{
+
+
+header menu ul li {
     display: inline;
     margin-right: 5%;
     text-underline: none;
@@ -29,6 +31,8 @@ header menu ul li{
     font-weight: bold;
 
 }
+
+
 header menu ul a{
     color: blue;
     text-decoration: none;
@@ -45,7 +49,7 @@ header menu ul a:hover{
 }
 #middle article{
     width:15%;
-    height:420px;
+    height:620px;
     text-align: justify;
     margin-right: 5%;
     border: 12px solid darkgray;
@@ -53,9 +57,9 @@ header menu ul a:hover{
 }
 
 #middle article img{
-    width: 200px;
+    width: 150px;
     height:100px;
-    margin-left: -32%;
+
 
 }
 
@@ -64,4 +68,45 @@ header menu ul a:hover{
 }
 #middle article p:first-letter{
     font-size: xx-large;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+    header menu ul li {
+        display: block;
+        margin-right: 5%;
+        text-underline: none;
+        list-style: none;
+        font-weight: bold;
+
+    }
+}
+@media screen and (max-width: 550px) {
+    body {
+        background-color: yellow;
+    }
+    header menu ul li {
+        display: block;
+        margin-right: 5%;
+        text-underline: none;
+        list-style: none;
+        font-weight: bold;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    body {
+        background-color: green;
+    }
+    header menu ul li {
+        display: block;
+        margin-right: 5%;
+        text-underline: none;
+        list-style: none;
+        font-weight: bold;
+
+    }
 }
