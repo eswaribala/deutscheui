@@ -59,7 +59,14 @@ header menu ul a:hover{
 #middle article img{
     width: 150px;
     height:100px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 2.0s ease;
 
+}
+#middle article img:hover{
+    width: 150px;
+    height:100px;
+    -webkit-transform: rotateZ(-45deg);
 
 }
 
