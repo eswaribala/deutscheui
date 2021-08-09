@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../styles/registration.css"/>
+</head>
+<body>
+<div class="container client-form">
+    <form>
+        <fieldset>
+        <legend>Client Registration</legend>
+
+
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+            <input type="text" id="firstName" placeholder="First Name"
+                class="form-control"  pattern="^[A-Za-z]{5,25}$"  required/>
+        </div>
+
+
+
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+            <input type="text" id="lastName" placeholder="Last Name"
+                   class="form-control" pattern="^[A-Za-z]{5,25}$" required/>
+        </div>
+
+
+
+
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            <input type="date" id="dob"  class="form-control" placeholder="Date of Birth"/>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <input type="radio"   id="male" name="gender" value="Male" />
+            <label for="male" class="radio-inline">Male</label>
+            <input type="radio"  id="female" name="gender" value="Female" />
+            <label for="female" class="radio-inline">Female</label>
+            <input type="radio" id="transgender" name="gender"
+                   value="Transgender" />
+            <label for="transgender" class="radio-inline">Transgender</label>
+        </div>
+
+
+        <input type="submit" class="btn btn-primary" value="submit"/>
+        </fieldset>
+    </form>
+
+</div>
+</body>
+</html>
