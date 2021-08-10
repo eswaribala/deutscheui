@@ -24,7 +24,7 @@ export class App extends React.Component<any, any>{
         {label: 'Admin', icon: 'pi pi-fw pi-calendar', command: () => { window.location.hash  = "/Admin" }},
         {label: 'Accounts', icon: 'pi pi-fw pi-user', command: () => { window.location.hash  = "/Accounts" }},
         {label: 'FAQ', icon: 'pi pi-fw pi-file', command: () => { window.location.hash  = "/FAQ" }},
-        {label: 'Aboutus', icon: 'pi pi-fw pi-cog', command: () => { window.location.hash  = "/Aboutus" }},
+        {label: 'Aboutus', icon: 'pi pi-fw pi-cog', command: () => { window.location.hash  = "/AboutUS" }},
         {label: 'Help', icon: 'pi pi-fw pi-question', command: () => { window.location.hash  = "/Help" }},
       ]
 

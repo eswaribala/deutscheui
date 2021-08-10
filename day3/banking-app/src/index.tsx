@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
+import {HashRouter} from "react-router-dom";
+var app=(
+    <HashRouter basename={"/banking-app"}>
 
+            <App />
+
+    </HashRouter>
+)
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  app,
   document.getElementById('startup')
 );
 
