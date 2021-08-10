@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BankLogo from './Logo/logo'
+import {BankMenu} from "./BankMenu/bankmenu";
 import {ReactComponent} from "*.svg";
 import 'primereact/resources/themes/saga-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
@@ -16,7 +17,17 @@ export class App extends React.Component<any, any>{
     console.log("Entering constructor....");
     //create state
     this.state={
-      currentTime:new Date()
+      currentTime:new Date(),
+      //props
+      topMenu:[
+        {label: 'Home', icon: 'pi pi-fw pi-home', command: () => { window.location.hash = "/Home" }},
+        {label: 'Admin', icon: 'pi pi-fw pi-calendar', command: () => { window.location.hash  = "/Admin" }},
+        {label: 'Accounts', icon: 'pi pi-fw pi-user', command: () => { window.location.hash  = "/Accounts" }},
+        {label: 'FAQ', icon: 'pi pi-fw pi-file', command: () => { window.location.hash  = "/FAQ" }},
+        {label: 'Aboutus', icon: 'pi pi-fw pi-cog', command: () => { window.location.hash  = "/Aboutus" }},
+        {label: 'Help', icon: 'pi pi-fw pi-question', command: () => { window.location.hash  = "/Help" }},
+      ]
+
     }
   }
 //arrow function
@@ -33,12 +44,17 @@ export class App extends React.Component<any, any>{
   render() {
     console.log("Rendering the component...");
     return (
+        <section>
         <header className="header">
         <BankLogo/>
         <h1 className="multicolortext">Global Bank</h1>
           {/*display time*/}
         <h4>{this.state.currentTime.toLocaleTimeString()}</h4>
         </header>
+        <section>
+          <BankMenu items={this.state.topMenu}/>
+        </section>
+        </section>
     )
   }
 
